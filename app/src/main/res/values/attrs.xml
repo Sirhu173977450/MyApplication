@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleProgressBar">
+        <attr name="circleProgressColor" format="color" />
+        <attr name="circleProgressStrokeWidth" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="TasksCompletedView">
+        <attr name="radius" format="dimension" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="circleColor" format="color" />
+        <attr name="ringColor" format="color" />
+        <attr name="word" format="string" />
+    </declare-styleable>
+    <declare-styleable name="AroundCircleView">
+        <attr name="ar_textColor" format="color" />
+        <attr name="ar_textSize" format="dimension" />
+        <attr name="ar_textBgColor" format="color" />
+        <attr name="shader_start_color"  format = "color"/>
+        <attr name="shader_end_color"  format = "color"/>
+    </declare-styleable>
+
+    <!--<declare-styleable name="DropDownMenu">-->
+        <!--<attr name="ddunderlineColor" format="color"/>-->
+        <!--<attr name="dddividerColor" format="color"/>-->
+        <!--<attr name="ddtextSelectedColor" format="color"/>-->
+        <!--<attr name="ddtextUnselectedColor" format="color"/>-->
+        <!--<attr name="ddmenuBackgroundColor" format="color"/>-->
+        <!--<attr name="ddmaskColor" format="color"/>-->
+        <!--<attr name="ddmenuTextSize" format="dimension"/>-->
+        <!--<attr name="ddmenuSelectedIcon" format="reference"/>-->
+        <!--<attr name="ddmenuUnselectedIcon" format="reference"/>-->
+        <!--<attr name="ddmenuMenuHeightPercent" format="float"/>-->
+    <!--</declare-styleable>-->
+</resources>

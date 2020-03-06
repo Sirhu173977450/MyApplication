@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/bt_smallGame"
+        android:layout_width="match_parent"
+        android:text="小游戏"
+        android:layout_height="55dp" />
+
+    <Button
+        android:id="@+id/bt_InScreen"
+        android:layout_width="match_parent"
+        android:text="插屏广告"
+        android:layout_height="55dp" />
+
+
+    <Button
+        android:id="@+id/bt_Banner"
+        android:layout_width="match_parent"
+        android:text="Banner广告"
+        android:layout_height="55dp" />
+
+
+    <Button
+        android:id="@+id/bt_Video"
+        android:layout_width="match_parent"
+        android:text="激励视频广告"
+        android:layout_height="55dp" />
+
+
+    <Button
+        android:id="@+id/bt_OpenScreen"
+        android:layout_width="match_parent"
+        android:text="开屏广告"
+        android:layout_height="55dp" />
+
+    <Button
+        android:id="@+id/bt_Info"
+        android:layout_width="match_parent"
+        android:text="信息流广告"
+        android:layout_height="55dp" />
+
+    <Button
+        android:id="@+id/bt_ShowNotification"
+        android:layout_width="match_parent"
+        android:text="显示Notification"
+        android:layout_height="55dp" />
+
+    <com.example.myapplication.TasksCompletedView
+        xmlns:tc="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tcvProjectProcess"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:minWidth="60dp"
+        tc:circleColor="@color/appdownloader_detail_download_blue"
+        tc:radius="25dp"
+        tc:ringColor="@color/appdownloader_detail_download_blue"
+        tc:strokeWidth="3dp"
+        tc:word="抢购" />
+
+    <com.example.myapplication.AroundCircleView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cv_view"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher"
+        app:ar_textBgColor="#D4C5D8"
+        app:ar_textColor="#611475"
+        app:ar_textSize="5dp" />
+
+    <TextView
+        android:id="@+id/tv_countDownTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/cmgame_sdk_game_red"
+        android:textSize="22sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="169dp"
+        android:gravity="center"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_voice_record"
+                android:layout_width="174dp"
+                android:src="@mipmap/ic_read"
+                android:layout_height="169dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/iv_voice_speak"
+                android:layout_width="179dp"
+                android:layout_alignParentTop="true"
+                android:layout_height="87dp"
+                android:src="@mipmap/ic_voice_speak" />
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/iv_voice_myrecord"
+                android:layout_width="179dp"
+                android:layout_alignParentBottom="true"
+                android:layout_height="87dp"
+                android:src="@mipmap/ic_voice_myrecord" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
