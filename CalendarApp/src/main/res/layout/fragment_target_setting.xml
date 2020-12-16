@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+        <ViewSwitcher
+            android:id="@+id/viewSwitcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rc_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_160"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/et_editText"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_55"
+                            android:layout_marginLeft="@dimen/dp_92"
+                            android:layout_marginRight="@dimen/dp_92"
+                            android:gravity="center"
+                            android:maxLength="2"
+                            android:singleLine="true"
+                            android:inputType="number"
+                            android:hint="请输入1-30整数"
+                            android:textColor="#ADADAD"
+                            android:theme="@style/TargetSettingEditText"
+                            android:textSize="@dimen/sp_18" />
+                </LinearLayout>
+        </ViewSwitcher>
+
+
+</LinearLayout>

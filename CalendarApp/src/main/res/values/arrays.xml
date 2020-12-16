@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="agenda_remind_string" >
+        <item>不提醒</item>
+        <item>即时提醒</item>
+        <item>提前1分钟提醒</item>
+        <item>提前5分钟提醒</item>
+        <item>提前10分钟提醒</item>
+        <item>提前15分钟提醒</item>
+        <item>提前20分钟提醒</item>
+        <item>提前30分钟提醒</item>
+        <item>提前1小时提醒</item>
+        <item>提前2小时提醒</item>
+    </string-array>
+    
+    <string-array name="agenda_remind_string2" >
+        <item>即时提醒</item>
+        <item>提前5分钟提醒</item>
+        <item>提前10分钟提醒</item>
+        <item>提前15分钟提醒(默认)</item>
+        <item>提前20分钟提醒</item>
+    </string-array>
+    
+    <integer-array name="agenda_remind_int">
+        <item></item>
+        <item>0</item>
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+    </integer-array>
+    
+    <integer-array name="agenda_remind_int2">
+        <item>0</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </integer-array>
+    
+    <string-array name="agenda_repeat_string" >
+        <item>无重复</item>
+        <item>每天重复</item>
+        <item>每周重复</item>
+        <item>每月重复</item>
+    </string-array>
+    
+    <string-array name="agenda_repeat_string_values">
+        <item></item>
+<!--        每天，坚持天数 选这个  ，  按周按月 每天提醒（按照坚持天数，（需判断打卡次数进行更新/））-->
+<!--        <item>FREQ=DAILY;COUNT=3</item>-->
+<!--&lt;!&ndash;        <item>FREQ=WEEKLY;COUNT=50</item>&ndash;&gt;-->
+<!--&lt;!&ndash;        <item>FREQ=WEEKLY;INTERVAL=2;UNTIL=19971224T000000Z;WKST=SU;BYDAY=MO,WE,FR</item>&ndash;&gt;-->
+<!--&lt;!&ndash;        <item>FREQ=WEEKLY;INTERVAL=0;UNTIL=20201110T000000Z;WKST=SU;BYDAY=MO,WE,FR</item>&ndash;&gt;-->
+<!--        <item>FREQ=WEEKLY;INTERVAL=0;UNTIL=20201110T000000Z;WKST=SU;BYDAY=%1$s,%2$s,%3$s</item>-->
+<!--&lt;!&ndash;        <item>FREQ=WEEKLY;INTERVAL=0;BYDAY=MO,WE,FR</item>&ndash;&gt;-->
+<!--        <item>FREQ=MONTHLY;COUNT=12</item>-->
+
+        <item>FREQ=DAILY;COUNT=7</item>
+        <item>FREQ=WEEKLY;COUNT=50</item>
+        <item>FREQ=MONTHLY;COUNT=12</item>
+    </string-array>
+
+
+    <string-array name="agenda_repeat_string_values2">
+        <item></item>
+        <item>FREQ=DAILY</item>
+        <item>FREQ=WEEKLY</item>
+        <item>FREQ=MONTHLY</item>
+    </string-array>
+    
+</resources>

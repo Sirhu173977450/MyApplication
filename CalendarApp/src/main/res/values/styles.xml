@@ -1,0 +1,80 @@
+<resources>
+
+    <!-- Base application theme. -->
+<!--     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar"> -->
+<!--         <item name="colorPrimary">@color/colorPrimary</item> -->
+<!--         <item name="colorPrimaryDark">@color/colorPrimaryDark</item> -->
+<!--         <item name="colorAccent">@color/colorAccent</item> -->
+<!--     </style> -->
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+
+    <declare-styleable name="SwitchButton">
+        <attr format="reference|dimension" name="sb_shadow_radius"/>
+        <attr format="reference|dimension" name="sb_shadow_offset"/>
+        <attr format="reference|color" name="sb_shadow_color"/>
+        <attr format="reference|color" name="sb_uncheck_color"/>
+        <attr format="reference|color" name="sb_checked_color"/>
+        <attr format="reference|dimension" name="sb_border_width"/>
+        <attr format="reference|color" name="sb_checkline_color"/>
+        <attr format="reference|dimension" name="sb_checkline_width"/>
+        <attr format="reference|color" name="sb_uncheckcircle_color"/>
+        <attr format="reference|dimension" name="sb_uncheckcircle_width"/>
+        <attr format="reference|dimension" name="sb_uncheckcircle_radius"/>
+        <attr format="reference|boolean" name="sb_checked"/>
+        <attr format="reference|boolean" name="sb_shadow_effect"/>
+        <attr format="reference|integer" name="sb_effect_duration"/>
+        <attr format="reference|color" name="sb_button_color"/>
+        <attr format="reference|boolean" name="sb_show_indicator"/>
+        <attr format="reference|color" name="sb_background"/>
+        <attr format="reference|boolean" name="sb_enable_effect"/>
+    </declare-styleable>
+
+    <style name="NiceDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="BottomAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/nice_bottom_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/nice_bottom_exit_anim</item>
+    </style>
+
+    <style name="RightAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/nice_right_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/nice_right_exit_anim</item>
+    </style>
+
+    <style name="LeftAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/nice_left_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/nice_left_exit_anim</item>
+    </style>
+
+    <style name="TopAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/nice_top_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/nice_top_exit_anim</item>
+    </style>
+
+    <style name="TargetSettingEditText" parent="Theme.AppCompat.Light">
+         <item name="colorControlNormal">#DCDCDC</item>
+         <item name="colorControlActivated">#666666</item>
+    </style>
+
+    <style name="TargetSettingStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+</resources>

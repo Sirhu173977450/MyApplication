@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:spinner="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding">
+
+	<Button 
+	    android:id="@+id/btn_button"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Button"
+	    android:textColor="@android:color/white"
+	    android:background="@drawable/selector_button" />
+	
+	<Button 
+	    android:id="@+id/btn_dialog"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="@dimen/margin"
+	    android:text="Dialog"
+	    android:textColor="@android:color/white"
+	    android:background="@drawable/selector_button" />
+	
+	<Button 
+	    android:id="@+id/btn_dialog2"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="@dimen/margin"
+	    android:text="Dialog2"
+	    android:textColor="@android:color/white"
+	    android:background="@drawable/selector_button" />
+	
+	<com.example.myapplication.spinner.NiceSpinner
+	    android:id="@+id/spinner"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="@dimen/margin"
+	    android:background="@color/button_normal"
+	    spinner:textTint="@android:color/black" />
+</LinearLayout>

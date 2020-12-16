@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <TextView
+        android:id="@+id/tv_calendar_event_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:paddingLeft="10dp"
+		android:paddingTop="5dp"
+		android:paddingBottom="5dp"
+        android:gravity="center_vertical"
+        android:text="8月1日 周二"
+        android:textSize="13sp"
+        android:background="#F4F4F4"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="#FCFCFC"
+		android:paddingTop="5dp"
+		android:paddingBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:orientation="vertical"
+			android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/tv_calendar_event_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:singleLine="true"/>
+
+            <TextView
+                android:id="@+id/tv_calendar_event_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center|right"
+            android:orientation="vertical"
+			android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/tv_event_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_event_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        
+<!--         <TextView -->
+<!--             android:id="@+id/tv_event_remind" -->
+<!--             android:layout_width="0dp" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_weight="3" -->
+<!--             android:background="@android:color/holo_orange_dark" -->
+<!--             android:gravity="center" -->
+<!--             android:textSize="10sp" /> -->
+
+        <CheckBox
+            android:id="@+id/cb_calendar_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>
