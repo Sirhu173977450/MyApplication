@@ -254,7 +254,10 @@ public class EventsListActivity extends Activity {
 					} else {
 						updatePosition = position;
 						calendarEvent.copy(events.get(position));
-						Intent intent = new Intent(EventsListActivity.this, EditCalendarActivity.class);
+//						Intent intent = new Intent(EventsListActivity.this,
+//								EditCalendarActivity.class);
+						Intent intent = new Intent(EventsListActivity.this,
+								EditCalendarActivity2.class);
 						intent.putExtra("type", 1);
 						intent.putExtra("objectEntity", calendarEvent);
 						startActivityForResult(intent, 88);
@@ -426,7 +429,10 @@ public class EventsListActivity extends Activity {
 		btn_add_event.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				Intent intent = new Intent(EventsListActivity.this, EditCalendarActivity.class);
+//				Intent intent = new Intent(EventsListActivity.this,
+//						EditCalendarActivity.class);
+				Intent intent = new Intent(EventsListActivity.this,
+						EditCalendarActivity2.class);
 				intent.putExtra("type", 0);
 				startActivityForResult(intent, 888);
 				pop.dismiss();

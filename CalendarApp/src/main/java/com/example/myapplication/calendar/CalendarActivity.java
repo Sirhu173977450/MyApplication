@@ -88,7 +88,10 @@ public class CalendarActivity extends FragmentActivity implements
 				startActivityForResult(intent,999);
 			}
 			else if (R.id.create==v.getId()) {
-				Intent intent=new Intent(CalendarActivity.this,EditCalendarActivity.class);
+//				Intent intent=new Intent(CalendarActivity.this,
+//						EditCalendarActivity.class);
+				Intent intent=new Intent(CalendarActivity.this,
+						EditCalendarActivity2.class);
 				intent.putExtra("type", 0);
 				startActivityForResult(intent,888);
 			}
@@ -162,7 +165,10 @@ public class CalendarActivity extends FragmentActivity implements
 			startActivityForResult(intent,999);
 		}
 		else {
-			Intent intent=new Intent(CalendarActivity.this,EditCalendarActivity.class);
+//			Intent intent=new Intent(CalendarActivity.this,
+//					EditCalendarActivity.class);
+			Intent intent=new Intent(CalendarActivity.this,
+					EditCalendarActivity2.class);
 			intent.putExtra("type", 0);
 			intent.putExtra("year", year);//当前点击时间年
 			intent.putExtra("month", month-1);//当前点击时间月
